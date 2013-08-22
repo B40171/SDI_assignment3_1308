@@ -45,3 +45,35 @@ var newGame = {//method procedure
     
 }//end of method procedure
     newGame.selection(newGame.type2);
+    
+console.log("One more player is needed for this game type.");
+
+if (newGame === "multiplayer") {
+    console.log(gamerTag.Nicole + " has joined the game.");
+    
+    } else {
+    
+        console.log("Add another player or select a different game type.");
+    };
+
+;
+
+console.log("Select game style.");    
+
+var gameSetup = {
+    
+    "map": ["Highway to Hell ", " Devil's Bend ", " Downtown Doom "],
+    "numberOfLaps": 5,
+    "Difficulty": ["Easy", "Medium", " Hard "],
+    "selectionsMade": function(mySelection){
+        
+        mySelection = (this.map[0] + this.numberOfLaps + this.Difficulty[2])
+        
+        return mySelection;
+        
+    }//end of method accessor
+    
+    
+    }// end of gameSetup object
+
+console.log("Here are your selections, " + gameSetup.selectionsMade())
